@@ -1,0 +1,291 @@
+:root {
+    --light: #FFFFFF;
+    --primary: #2D2D2D;
+    --secondary: #8F8F8F;
+    --accent: #CB0A08;
+    --dark: #A30503;
+}
+
+@font-face {
+    font-family: "Rostov";
+    src: url('/Smart65/Files/Fonts/Rostov.woff2') format('woff2'),
+         url('/Smart65/Files/Fonts/Rostov.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UniSans";
+    src: url('/Smart65/Files/Fonts/UniSansThin.woff2') format('woff2'),
+         url('/Smart65/Files/Fonts/UniSansThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UniSans";
+    src: url('/Smart65/Files/Fonts/UniSans-Trial-Book.woff2') format('woff2'),
+         url('/Smart65/Files/Fonts/UniSans-Trial-Book.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UniSans";
+    src: url('/Smart65/Files/Fonts/UniSans-Trial-Regular.woff2') format('woff2'),
+         url('/Smart65/Files/Fonts/UniSans-Trial-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UniSans";
+    src: url('/Smart65/Files/Fonts/UniSans-Trial-Heavy.woff2') format('woff2'),
+         url('/Smart65/Files/Fonts/UniSans-Trial-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    width: 1200px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    margin: 0;
+
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 14px 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background: var(--light);
+}
+
+.button {
+    display: inline-flex;
+    vertical-align: top;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--light);
+    border: 2px solid var(--light);
+
+    transition: color 0.2s ease-in-out; /* настройки посмотреть в тильде */
+}
+
+.button:hover {
+    border: 2px solid var(--accent);
+}
+
+a {
+    font-family: "UniSans";
+    font-weight: 900;
+    font-size: 16pt;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    width: 1200px;
+    height: 137px;
+    padding: 12px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.safety {
+    height: 113px;
+    flex-shrink: 0;
+    align-self: stretch;
+    margin: 98px 0 0;
+}
+
+.camera {
+    width: 1140px;
+    height: 452px;
+    border-radius: 32px;
+}
+
+/* второй слайд SERVICES*/
+
+
+h1 {
+    font-family: "UniSans";
+    font-weight: 100;
+    font-size: 40pt;
+    color: var(--primary);
+    text-decoration: none;
+    margin-bottom: 36px;
+    display: flex;
+    width: 1200px;
+    padding: 4px 30px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    width: 1162px;
+    height: 240px;
+    padding: 36px 0px 89px 32px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 321px;
+    flex-shrink: 0;
+    border-radius: 0 24px 24px 0;
+    background: var(--light);
+    margin: 0 38px 0 0;
+}
+
+.card:hover {
+    background: var(--accent);
+}
+
+.card:hover .card_t_text, .card:hover .card_text {
+    color: var(--light);
+}
+
+
+
+.card_title {
+    font-family: Rostov;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--primary);
+    width: 334px;
+    flex-shrink: 0;
+    margin: 0;
+    line-height: auto;
+}
+
+.card_text_group {
+    width: 475px;
+    height: 115px;
+    flex-shrink: 0;
+}
+
+.card_t_text {
+    font-family: UniSans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 0;
+}
+
+.card_text {
+    font-family: UniSans;
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--primary);
+    margin: 16px 0 0 0;
+}
+
+/* третий слайд Advantages*/
+
+.advantages_group {
+    display: flex;
+    width: 1141px;
+    height: 104px;
+    gap: 55px;
+
+}
+
+.a_group {
+    width: 244px;
+    height: 104px;
+    border-left: 2px solid var(--primary) ;
+    padding-left: 12px;
+}
+
+.a_title {
+    font-family: Rostov;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--primary);
+    width: 232px;
+    line-height: normal;
+}
+
+.a_text {
+    font-family: UniSans;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: normal;
+    color: var(--accent);
+    width: 232px;
+    margin: 26px 0 0 0;
+}
+
+footer {
+    width: 1200px;
+    height: 675px;
+    background-image: url("/Smart65/Files/Images/Contacts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_title {
+    width: 1140px;
+    margin: 124px 30px;
+}
+
+.footer_group {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    margin: 0 30px 62px 30px;
+    gap: 200px;
+}
+
+.footer_text {
+    font-family: UniSans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.links {
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+#email {
+    margin-bottom: 0;
+}
