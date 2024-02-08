@@ -46,18 +46,29 @@
     font-style: normal;
 }
 
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-*, *::after, *::before {
-    box-sizing: border-box;
+main {
+    padding-top: 110px;
+    box-sizing: content-box;
 }
 
+.logo {
+    cursor: pointer;
+}
 
 .container {
     display: flex;
@@ -67,9 +78,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 26px;
-    margin: 0;
-
 }
+
+/* NavBar */
 
 .navbar {
     display: flex;
@@ -80,8 +91,9 @@ body {
     align-items: center;
     margin: 0 auto;
     position: fixed;
-    top: 0;
     background: var(--light);
+    z-index: 10;
+
 }
 
 .button {
@@ -95,11 +107,15 @@ body {
     background: var(--light);
     border: 2px solid var(--light);
 
-    transition: color 0.2s ease-in-out; /* настройки посмотреть в тильде */
+    transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
     border: 2px solid var(--accent);
+}
+
+.logo {
+    cursor: pointer;
 }
 
 a {
@@ -109,8 +125,9 @@ a {
     color: var(--primary);
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0;
 }
+
+/* firs slide */
 
 .title {
     display: flex;
@@ -127,7 +144,6 @@ a {
     height: 113px;
     flex-shrink: 0;
     align-self: stretch;
-    margin: 98px 0 0;
 }
 
 .camera {
@@ -136,7 +152,7 @@ a {
     border-radius: 32px;
 }
 
-/* второй слайд SERVICES*/
+/* second slide SERVICES */
 
 
 h1 {
@@ -164,6 +180,9 @@ h1 {
     border-radius: 0 24px 24px 0;
     background: var(--light);
     margin: 0 38px 0 0;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .card:hover {
@@ -213,7 +232,7 @@ h1 {
     margin: 16px 0 0 0;
 }
 
-/* третий слайд Advantages*/
+/* third slide Advantages */
 
 .advantages_group {
     display: flex;
@@ -250,14 +269,14 @@ h1 {
     margin: 26px 0 0 0;
 }
 
+/* footer */
+
 footer {
     width: 1200px;
     height: 675px;
     background-image: url("/Smart65/Files/Images/Contacts.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    padding: 0;
 }
 
 .footer_title {
@@ -282,10 +301,10 @@ footer {
 }
 
 .links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 26px;
     text-transform: uppercase;
-    margin-bottom: 26px;
-}
-
-#email {
-    margin-bottom: 0;
 }
