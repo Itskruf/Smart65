@@ -6,45 +6,49 @@
     --dark: #A30503;
 }
 
+ /* fonts */
+
 @font-face {
     font-family: "Rostov";
-    src: url('/Smart65/Files/Fonts/Rostov.woff2') format('woff2'),
-         url('/Smart65/Files/Fonts/Rostov.woff') format('woff');
+    src: url('/Files/Fonts/Rostov.woff2') format('woff2'),
+         url('/Files/Fonts/Rostov.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "UniSans";
-    src: url('/Smart65/Files/Fonts/UniSansThin.woff2') format('woff2'),
-         url('/Smart65/Files/Fonts/UniSansThin.woff') format('woff');
+    src: url('/Files/Fonts/UniSansThin.woff2') format('woff2'),
+         url('/Files/Fonts/UniSansThin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: "UniSans";
-    src: url('/Smart65/Files/Fonts/UniSans-Trial-Book.woff2') format('woff2'),
-         url('/Smart65/Files/Fonts/UniSans-Trial-Book.woff') format('woff');
+    src: url('/Files/Fonts/UniSans-Trial-Book.woff2') format('woff2'),
+         url('/Files/Fonts/UniSans-Trial-Book.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: "UniSans";
-    src: url('/Smart65/Files/Fonts/UniSans-Trial-Regular.woff2') format('woff2'),
-         url('/Smart65/Files/Fonts/UniSans-Trial-Regular.woff') format('woff');
+    src: url('/Files/Fonts/UniSans-Trial-Regular.woff2') format('woff2'),
+         url('/Files/Fonts/UniSans-Trial-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "UniSans";
-    src: url('/Smart65/Files/Fonts/UniSans-Trial-Heavy.woff2') format('woff2'),
-         url('/Smart65/Files/Fonts/UniSans-Trial-Heavy.woff') format('woff');
+    src: url('/Files/Fonts/UniSans-Trial-Heavy.woff2') format('woff2'),
+         url('/Files/Fonts/UniSans-Trial-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
+
+/* progect */
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -119,9 +123,9 @@ main {
 }
 
 a {
-    font-family: "UniSans";
+    font-family: UniSans;
     font-weight: 900;
-    font-size: 16pt;
+    font-size: 16px;
     color: var(--primary);
     text-transform: uppercase;
     text-decoration: none;
@@ -156,9 +160,9 @@ a {
 
 
 h1 {
-    font-family: "UniSans";
+    font-family: UniSans;
     font-weight: 100;
-    font-size: 40pt;
+    font-size: 40px;
     color: var(--primary);
     text-decoration: none;
     margin-bottom: 36px;
@@ -274,7 +278,7 @@ h1 {
 footer {
     width: 1200px;
     height: 675px;
-    background-image: url("/Smart65/Files/Images/Contacts.jpg");
+    background-image: url("/Files/Images/Contacts.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
